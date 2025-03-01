@@ -1,5 +1,6 @@
 [
   { "type": "constructor", "inputs": [], "stateMutability": "nonpayable" },
+  { "type": "receive", "stateMutability": "payable" },
   {
     "type": "function",
     "name": "addrToAmount",
@@ -17,9 +18,7 @@
   {
     "type": "function",
     "name": "fund",
-    "inputs": [
-      { "name": "_value", "type": "uint256", "internalType": "uint256" }
-    ],
+    "inputs": [],
     "outputs": [],
     "stateMutability": "payable"
   },
@@ -62,7 +61,7 @@
       {
         "name": "_addr",
         "type": "address",
-        "indexed": false,
+        "indexed": true,
         "internalType": "address"
       },
       {
