@@ -8,7 +8,7 @@ import {
   JsonRpcProvider,
   Contract
 } from 'ethers';
-import sign_abi from './sign_abi';
+import sign_abi from './sign_abi.json';
 
 // 钱包私钥  从后端请求到
 const METAMASK_ADDRESS = '0x3613823dB849e6c2f549B49c2b29fd4b7BbEca63';

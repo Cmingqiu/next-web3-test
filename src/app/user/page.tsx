@@ -1,7 +1,6 @@
 import { FC } from 'react';
 
-const UserPage: FC<{ name: string }> = ({ name }) => {
-  console.log(name);
+const UserPage: FC = ({}) => {
   return (
     <div>
       <h1>UserPage</h1>

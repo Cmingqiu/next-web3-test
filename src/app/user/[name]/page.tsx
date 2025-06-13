@@ -1,8 +1,8 @@
 'use client';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import { FC } from 'react';
 
-const User: FC<{ name: string }> = ({ name }) => {
+const User: FC = ({}) => {
   const pathname = usePathname();
   return (
     <div>

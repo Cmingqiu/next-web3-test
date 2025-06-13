@@ -52,6 +52,12 @@ export default function Home() {
             rel='noopener noreferrer'>
             rainbowkit
           </div>
+
+          <button
+            className='cursor-pointer px-8 py-2 rounded-xl border border-solid border-orange-700'
+            onClick={() => router.push('/test?name=test')}>
+            test
+          </button>
         </div>
       </main>
     </div>
