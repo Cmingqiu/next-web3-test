@@ -1,0 +1,1 @@
+export const ZAN_RPC_URL ='https://api.zan.top/node/v1/eth/mainnet/1e287729d4684676bd524355e9b0d01a'

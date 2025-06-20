@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className='grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]'>
       <main className='flex flex-col gap-8 row-start-2 items-center sm:items-start'>
-        <div className='flex gap-4 items-center flex-col sm:flex-row'>
+        <div className='flex gap-4 items-center flex-col sm:flex-row  flex-wrap'>
           <Link
             href={'/user/zhangsan'}
             className='rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5'
@@ -21,7 +21,7 @@ export default function Home() {
             onClick={() => {
               router.push('/user');
             }}
-            className='rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44'
+            className='button'
             rel='noopener noreferrer'>
             /user
           </div>
@@ -30,7 +30,7 @@ export default function Home() {
             onClick={() => {
               router.push('/transaction');
             }}
-            className='rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44'
+            className='button'
             rel='noopener noreferrer'>
             发送交易
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
             onClick={() => {
               router.push('/contract');
             }}
-            className='rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44'
+            className='button'
             rel='noopener noreferrer'>
             合约交互
           </div>
@@ -48,7 +48,7 @@ export default function Home() {
             onClick={() => {
               router.push('/rainbowkit');
             }}
-            className='rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44'
+            className='button'
             rel='noopener noreferrer'>
             rainbowkit
           </div>
@@ -58,6 +58,15 @@ export default function Home() {
             onClick={() => router.push('/test?name=test')}>
             test
           </button>
+
+          <div
+            onClick={() => {
+              router.push('/ant-web3');
+            }}
+            className='button'
+            rel='noopener noreferrer'>
+            ant-web3
+          </div>
         </div>
       </main>
     </div>

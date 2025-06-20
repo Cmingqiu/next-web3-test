@@ -14,7 +14,7 @@ import sign_abi from './sign_abi.json';
 const METAMASK_ADDRESS = '0x3613823dB849e6c2f549B49c2b29fd4b7BbEca63';
 const Account3 = '0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266';
 const Account4 = '0x70997970C51812dc3A010C7d01b50e0d17dc79C8';
-const RPC_URL = 'http://127.0.0.1:8545'; //  'https://eth-sepolia.g.alchemy.com/v2/Ds271vEzQqpdypCLkkqi81sbHWpNCStl';
+const RPC_URL = 'http://127.0.0.1:8545';
 
 const Account = () => {
   const [account, setAccount] = useState({
