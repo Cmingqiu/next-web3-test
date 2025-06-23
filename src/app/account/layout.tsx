@@ -6,10 +6,10 @@ export default function AccountLayout({
   children: React.ReactNode;
 }) {
   return (
-    <div>
+    <div className='p-[10px]'>
       <h1>account page</h1>
-      <br />
       <hr />
+      <br />
       {children}
     </div>
   );
