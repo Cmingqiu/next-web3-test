@@ -67,6 +67,15 @@ export default function Home() {
             rel='noopener noreferrer'>
             ant-web3
           </div>
+
+          <div
+            onClick={() => {
+              router.push('/wagmi');
+            }}
+            className='button'
+            rel='noopener noreferrer'>
+            wagmi
+          </div>
         </div>
       </main>
     </div>
