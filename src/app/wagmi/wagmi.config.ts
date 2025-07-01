@@ -19,6 +19,8 @@ export const config = createConfig({
   connectors: [
     injected(),
     metaMask(),
-    walletConnect({ projectId: WALLETCONNECT_PROJECT_ID })
+    walletConnect({
+      projectId: WALLETCONNECT_PROJECT_ID /*  showQrModal: false  */
+    }) //showQrModal为了关闭 ConnectModal 的默认弹窗，避免出现重复的弹窗
   ]
 });

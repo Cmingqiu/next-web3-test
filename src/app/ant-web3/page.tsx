@@ -3,7 +3,8 @@ import { Address, ConnectButton, Connector, NFTCard } from '@ant-design/web3';
 import {
   Mainnet,
   MetaMask,
-  WagmiWeb3ConfigProvider
+  WagmiWeb3ConfigProvider,
+  WalletConnect
 } from '@ant-design/web3-wagmi';
 import { http } from 'viem';
 
@@ -14,7 +15,7 @@ export default function AntWeb3() {
   return (
     <WagmiWeb3ConfigProvider
       eip6963={{ autoAddInjectedWallets: true }}
-      wallets={[MetaMask()]}
+      wallets={[MetaMask(), WalletConnect()]}
       transports={{
         [Mainnet.id]: http(ZAN_RPC_URL)
       }}>
